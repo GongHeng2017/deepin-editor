@@ -21,7 +21,7 @@
 QPixmap *Tabbar::sm_pDragPixmap = nullptr;
 
 // 不同模式下的界面调整
-const int s_TabbarHeight = 40;
+const int s_TabbarHeight = 36;
 const int s_TabbarHeightCompact = 26;
 
 /**
@@ -57,6 +57,7 @@ Tabbar::Tabbar(QWidget *parent)
     setMovable(true);
     setTabsClosable(true);
     setVisibleAddButton(true);
+    setUsesScrollButtons(false);
     setDragable(true);
     setAcceptDrops(true);
     // setStartDragDistance(40);
